@@ -102,14 +102,14 @@ h3{
 /**Formulario**/
 .formulario{
     background-color: var(--primario_Oscuro);
-    margin: -10rem auto 0 auto;
-    width: 80%;
+    margin: -12rem auto 0 auto;
+    width: 60%;
     padding: 5rem;
-
 }
 
 .campo{
     display: flex;
+    color: var(--blanco);
     margin-bottom: 2rem;
     gap: 2rem;
 }
@@ -149,11 +149,16 @@ h3{
     color: var(--blanco);
     text-align: center;
     padding: 1rem 3rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
-    border: none
+    border: none;
+    margin: 1rem auto;
+}
+
+.boton_reset{
+    font-size: 1.5rem;
 }
 
 .boton:hover{

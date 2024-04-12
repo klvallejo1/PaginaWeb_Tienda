@@ -1,10 +1,10 @@
 /**Variables a reutilizar**/
 :root{
-    --primario:#F7F4DC; 
-    --primario_Oscuro:#F9F4CD;
+    --primario:#CD95F5; 
+    --primario_Oscuro:#71466D;
 
-    --secundario: #A79AF9;
-    --secundario_Oscuro:#9181F9;
+    --secundario: #F5C36C;
+    --secundario_Oscuro:#B98649;
 
     --blanco: #FFFFFF;
     --negro: #000000;
@@ -34,6 +34,7 @@ img{
 
 p{
     font-size: 1.8rem;
+    color: var(--secundario);
 }
 
 a{
@@ -79,14 +80,14 @@ h3{
 
 .navegacion_enlace{
     font-family: var(--fuente_Principal);
-    color: var(--secundario_Oscuro);
+    color: var(--secundario);
     font-size: 3rem;
 
 }
 
 .navegacion_enlace--activo,
 .navegacion_enlace:hover{
-    color: var(--negro);
+    color: var(--secundario_Oscuro);
 }
 
 
