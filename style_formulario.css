@@ -1,0 +1,104 @@
+/**Variables a reutilizar**/
+:root{
+    --primario:#F7F4DC; 
+    --primario_Oscuro:#F9F4CD;
+
+    --secundario: #A79AF9;
+    --secundario_Oscuro:#9181F9;
+
+    --blanco: #FFFFFF;
+    --negro: #000000;
+
+    --fuente_Principal: sans-serif;
+}
+
+/**Cambia la forma de calcular el tamaño de un elemento**/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/**Globales**/
+body{
+    background-color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    text-align: center;
+    font-family: var(--fuente_Principal);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+/**Header**/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo{
+    height: auto;
+}
+
+/**Navegacion**/
+.navegacion{
+    background-color: var(--primario_Oscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion_enlace{
+    font-family: var(--fuente_Principal);
+    color: var(--secundario_Oscuro);
+    font-size: 3rem;
+
+}
+
+.navegacion_enlace--activo,
+.navegacion_enlace:hover{
+    color: var(--negro);
+}
+
+
+/**Footer**/
+.footer{
+    background-color: var(--primario_Oscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer_texto{
+    font-family: var(--fuente_Principal);
+    text-align: center;
+    font-size: 2.2rem;
+}
