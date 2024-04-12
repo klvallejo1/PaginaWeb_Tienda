@@ -1,10 +1,10 @@
 /**Variables a reutilizar**/
 :root{
-    --primario:#F7F4DC; 
-    --primario_Oscuro:#F9F4CD;
+    --primario:#CD95F5; 
+    --primario_Oscuro:#71466D;
 
-    --secundario: #A79AF9;
-    --secundario_Oscuro:#9181F9;
+    --secundario: #F5C36C;
+    --secundario_Oscuro:#B98649;
 
     --blanco: #FFFFFF;
     --negro: #000000;
@@ -34,6 +34,7 @@ img{
 
 p{
     font-size: 1.8rem;
+    color: var(--secundario);
 }
 
 a{
@@ -79,16 +80,53 @@ h3{
 
 .navegacion_enlace{
     font-family: var(--fuente_Principal);
-    color: var(--secundario_Oscuro);
+    color: var(--secundario);
     font-size: 3rem;
-
 }
 
 .navegacion_enlace--activo,
 .navegacion_enlace:hover{
-    color: var(--negro);
+    color: var(--secundario_Oscuro);
 }
 
+/**Imagen**/
+.imagen_fondo{
+    background-image: url(WallpaperContacto.jpg);
+    height: 60rem;
+    margin: 2rem 10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/**Formulario**/
+.formulario{
+    background-color: var(--primario_Oscuro);
+    margin: -10rem auto 0 auto;
+    width: 80%;
+    padding: 5rem;
+
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.campo_label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+
+.items{
+    flex: 1rem;
+    border: 1px solid var(--negro);
+}
+
+.campo_label_txtArea{
+    height: 20rem;
+}
 
 /**Footer**/
 .footer{
@@ -100,5 +138,25 @@ h3{
 .footer_texto{
     font-family: var(--fuente_Principal);
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
+
+/**Botones**/
+.boton{
+    display: block;
+    background-color: var(--negro);
+    font-family: var(--fuente_Principal);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
