@@ -37,8 +37,10 @@ img{
 }
 
 p{
+    font-family: var(--fuente_Principal);
+    font-weight: 300;
     font-size: 1.8rem;
-    color: var(--secundario);
+    color: var(--negro);
 }
 
 a{
@@ -62,6 +64,11 @@ h2{
 
 h3{
     font-size: 2.4rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
 /**Header**/
@@ -96,6 +103,33 @@ h3{
     color: var(--secundario_Oscuro);
 }
 
+/**Nosotros*/
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+
+}
+
+.nosotros_contenido{
+
+}
+
+.nosotros_imagen{
+    grid-row: 1 / 2;
+    width: 100%;
+}
+
+/**Bloques**/
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+
+}
+
+
+
 
 /**Footer**/
 .footer{
@@ -105,7 +139,7 @@ h3{
 }
 
 .footer_texto{
-    font-family: var(--fuente_Principal);
+    color: var(--secundario);
     text-align: center;
     font-size: 2.2rem;
 }
