@@ -38,12 +38,13 @@ img{
 
 p{
     font-family: var(--fuente_Principal);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.8rem;
-    color: var(--secundario);
+    color: var(--negro);
 }
 
 a{
+    font-family: var(--fuente_Principal);
     text-decoration: none;
 }
 
@@ -142,18 +143,6 @@ h3{
     height: 20rem;
 }
 
-/**Footer**/
-.footer{
-    background-color: var(--primario_Oscuro);
-    padding: 1rem 0;
-    margin-top: 2rem;
-}
-
-.footer_texto{
-    text-align: center;
-    font-size: 2.5rem;
-}
-
 /**Botones**/
 .boton{
     display: block;
@@ -177,4 +166,35 @@ h3{
 .boton:hover{
     cursor: pointer;
 }
+
+
+/**Footer**/
+.footer{
+    background-color: var(--primario_Oscuro);
+    padding: 0.1rem 0;
+    margin-top: 2rem;
+}
+
+.footer_texto{
+    color: var(--secundario);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.footer_texto_red{
+    color: var(--secundario);
+}
+
+.footer_red{
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer_content{
+    margin: 0 1rem;
+    text-align: center;
+}
+
+
 

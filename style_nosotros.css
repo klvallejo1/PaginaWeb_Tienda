@@ -38,7 +38,7 @@ img{
 
 p{
     font-family: var(--fuente_Principal);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.8rem;
     color: var(--negro);
 }
@@ -142,7 +142,7 @@ h3{
 /**Footer**/
 .footer{
     background-color: var(--primario_Oscuro);
-    padding: 1rem 0;
+    padding: 0.1rem 0;
     margin-top: 2rem;
 }
 
@@ -152,8 +152,13 @@ h3{
     font-size: 2.5rem;
 }
 
+.footer_texto_red{
+    color: var(--secundario);
+}
+
 .footer_red{
     display: flex;
+    justify-content: center;
 
 }
 
