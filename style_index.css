@@ -115,6 +115,10 @@ h3{
     color: var(--secundario);
 }
 
+.footer_texto_red:hover{
+    color: var(--secundario_Oscuro);
+}
+
 .footer_red{
     display: flex;
     justify-content: center;

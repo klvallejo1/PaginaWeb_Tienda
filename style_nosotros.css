@@ -23,7 +23,7 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
 /**Globales**/
 body{
@@ -154,6 +154,10 @@ h3{
 
 .footer_texto_red{
     color: var(--secundario);
+}
+
+.footer_texto_red:hover{
+    color: var(--secundario_Oscuro);
 }
 
 .footer_red{
