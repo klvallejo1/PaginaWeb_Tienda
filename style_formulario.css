@@ -128,6 +128,7 @@ h3{
 .campo_label{
     flex: 0 0 9rem;
     text-align: right;
+    font-weight: bold;
 }
 
 .campo_label_txtArea{
@@ -146,7 +147,7 @@ h3{
 /**Botones**/
 .boton{
     display: block;
-    background-color: var(--negro);
+    background-color: var(--primario);
     font-family: var(--fuente_Principal);
     color: var(--blanco);
     text-align: center;
@@ -157,6 +158,7 @@ h3{
     margin-bottom: 2rem;
     border: none;
     margin: 1rem auto;
+    transition: background-color .2s ease-in-out;
 }
 
 .boton_reset{
@@ -165,6 +167,7 @@ h3{
 
 .boton:hover{
     cursor: pointer;
+    background-color: var(--secundario_Oscuro);
 }
 
 

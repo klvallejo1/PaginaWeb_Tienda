@@ -43,8 +43,22 @@
             </div>
 
             <div class="campo">
+                <label for="estado_civil" class="campo_label">ESTADO CIVIL:</label>
+                <select id="opciones" name="opciones" class="items">
+                    <option value="opcion1">Soltero/a</option>
+                    <option value="opcion2">Casado/a</option>
+                    <option value="opcion3">Divorciado/a</option>
+                  </select>                  
+            </div>
+
+            <div class="campo">
                 <label for="mensaje" class="campo_label">MANGA A SOLICITAR: </label>
                 <textarea id="mensaje" class="items campo_label_txtArea" placeholder="¿Que manga buscabas? Ingresa su nombre, volumen, editorial, etc..."></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="foto" class="campo_label">AGREGA UNA FOTO</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
             </div>
 
             <div>

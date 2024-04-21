@@ -132,7 +132,7 @@ h3{
     }
 }
 
-.texto_formulario h1, .formulario_input label, .formulario_forget a, .texto_formulario p, input{
+.texto_formulario h1, .formulario_input label, .formulario_forget a, .formulario_register a,.texto_formulario p{
     color: var(--blanco);
     font-family: var(--fuente_Principal);
 }
@@ -161,6 +161,8 @@ h3{
 
 input{
     width: 100%;
+    font-family: var(--fuente_Principal);
+    color: var(--negro);
     padding: 1rem 1.6rem;
     border-radius: 0.5rem;
     outline: none;
@@ -185,6 +187,12 @@ input{
     display: inline-block;
     margin-top: 2rem;
     font-size: 2rem;
+}
+
+.formulario_register a{
+    display: inline-block;
+    margin-top: 3rem;
+    font-size: 1.5rem;
 }
 
  
