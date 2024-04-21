@@ -20,9 +20,10 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
   }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
 
 /**Globales**/
 body{
@@ -65,6 +66,15 @@ h3{
     font-size: 2.4rem;
 }
 
+/**Contenedor**/
+.contenedor{
+    margin: 0 auto;
+    padding-top: 2rem;
+    max-width: 120rem;
+    width: 95%;
+}
+
+
 /**Header**/
 .header{
     display: flex;
@@ -97,8 +107,87 @@ h3{
     color: var(--secundario_Oscuro);
 }
 
+/**Formulario**/
+@media(min-width:768px){
+    .contenedor_formulario{
+        display: flex;
+    }
+}
 
+.imagen_formulario{
+    background-image: url(F1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 20rem;
+    flex: 0 0 calc(60%);
+}
 
+.contenedor_formulario{
+    display: flex;
+}
+
+@media(min-width:768px){
+    .imagen_formulario{
+        height: auto;
+    }
+}
+
+.texto_formulario h1, .formulario_input label, .formulario_forget a, .texto_formulario p, input{
+    color: var(--blanco);
+    font-family: var(--fuente_Principal);
+}
+
+.formulario{
+    padding: 5rem;
+    background-color: var(--primario_Oscuro);
+}
+
+.texto_formulario h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.texto_formulario p{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.formulario_input label{
+    display: block;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+input{
+    width: 100%;
+    padding: 1rem 1.6rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.input_boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border: none;
+    transition: background-color .2s ease-in-out;
+}
+
+.input_boton:hover{
+    cursor: pointer;
+    background-color: var(--secundario_Oscuro);
+}
+
+.formulario_forget a{
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+ 
 /**Footer**/
 .footer{
     background-color: var(--primario_Oscuro);
